@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"ngat_timer\startup_stm32f103xb.o"
+"ngat_timer\main.o"
+"ngat_timer\stm32f1xx_it.o"
+"ngat_timer\stm32f1xx_hal_msp.o"
+"ngat_timer\stm32f1xx_hal_gpio_ex.o"
+"ngat_timer\stm32f1xx_hal_tim.o"
+"ngat_timer\stm32f1xx_hal_tim_ex.o"
+"ngat_timer\stm32f1xx_hal.o"
+"ngat_timer\stm32f1xx_hal_rcc.o"
+"ngat_timer\stm32f1xx_hal_rcc_ex.o"
+"ngat_timer\stm32f1xx_hal_gpio.o"
+"ngat_timer\stm32f1xx_hal_dma.o"
+"ngat_timer\stm32f1xx_hal_cortex.o"
+"ngat_timer\stm32f1xx_hal_pwr.o"
+"ngat_timer\stm32f1xx_hal_flash.o"
+"ngat_timer\stm32f1xx_hal_flash_ex.o"
+"ngat_timer\stm32f1xx_hal_exti.o"
+"ngat_timer\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Ngat_Timer\Ngat_Timer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Ngat_Timer.map" -o Ngat_Timer\Ngat_Timer.axf
